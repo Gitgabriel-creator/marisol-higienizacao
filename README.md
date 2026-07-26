@@ -2,6 +2,10 @@
 
 Landing page da Marisol Higienização de Estofados.
 
+## Site publicado
+
+https://gitgabriel-creator.github.io/marisol-higienizacao/
+
 ## Conteúdo
 
 - Higienização e impermeabilização de estofados
@@ -11,4 +15,4 @@ Landing page da Marisol Higienização de Estofados.
 
 ## Desenvolvimento
 
-Projeto construído com React, Next.js e TypeScript.
+Projeto construído com React, Next.js e TypeScript e publicado automaticamente pelo GitHub Pages.
