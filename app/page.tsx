@@ -61,12 +61,13 @@ const faqs = [
 
 export default function Home() {
   const whatsappUrl = "https://api.whatsapp.com/message/ZXVRZYBDCOVYH1?autoload=1&app_absent=0&utm_source=ig";
+  const basePath = process.env.GITHUB_ACTIONS === "true" ? "/marisol-higienizacao" : "";
 
   return (
     <main>
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Marisol Higienização — início">
-          <img src="/logo-transparent.png" alt="Marisol Higienização de Estofados" />
+          <img src={`${basePath}/logo-transparent.png`} alt="Marisol Higienização de Estofados" />
         </a>
         <nav aria-label="Navegação principal">
           <a href="#servicos">Serviços</a>
@@ -161,7 +162,7 @@ export default function Home() {
           </a>
         </div>
         <figure className="result-image">
-          <img src="/antes-depois.jpg" alt="Antes e depois da higienização de um colchão realizada pela Marisol" />
+          <img src={`${basePath}/antes-depois.jpg`} alt="Antes e depois da higienização de um colchão realizada pela Marisol" />
           <figcaption><SparkIcon /> Resultado Marisol</figcaption>
         </figure>
       </section>
@@ -212,7 +213,7 @@ export default function Home() {
         <div className="promise-art">
           <div className="promise-ring ring-one" />
           <div className="promise-ring ring-two" />
-          <div className="promise-logo"><img src="/logo-transparent.png" alt="" /></div>
+          <div className="promise-logo"><img src={`${basePath}/logo-transparent.png`} alt="" /></div>
         </div>
         <div className="promise-copy">
           <p className="section-kicker light">A MARISOL</p>
@@ -254,7 +255,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand">
-          <img src="/logo-transparent.png" alt="Marisol Higienização" />
+          <img src={`${basePath}/logo-transparent.png`} alt="Marisol Higienização" />
           <p>Saúde, conforto e perfume de novo para o seu lar.</p>
         </div>
         <div>
